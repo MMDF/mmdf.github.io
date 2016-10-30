@@ -20,6 +20,9 @@ h3{
     animation-delay:1s!important;
     font-weight:200;
 }
+a{
+  animation-delay:1.5s!important;
+}
 @keyframes fadein {
     from {opacity:0;}
     to {opacity:1;}
@@ -46,13 +49,20 @@ h3{
   animation-name: moveaway;
   animation-duration:1.5s;
   animation-timing-function:ease-in-out;
-  animation-delay:3s;
+  animation-delay:4s;
   animation-fill-mode:forwards;
 }
 .page-2 {
   opacity:0;
+  animation: fadein 1.3s ease-in-out 5s 1 normal forwards, moveaway 1.5s ease-in-out 7s normal forwards;
+}
+.page-3 {
+  opacity:0;
   animation-name: fadein;
-  animation-delay:3.3s;
-  animation-duration: 1.3s;
+  animation-delay: 7.7s;
+  animation-duration: 1.5s;
   animation-fill-mode: forwards;
+}
+.card {
+  text-align:initial;
 }
